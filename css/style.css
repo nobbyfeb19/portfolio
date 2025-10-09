@@ -97,7 +97,7 @@ img{
 }
 @media (max-width: 768px) {
 .site-header__inner{
-  padding:5rem 20rem;
+  padding:20rem;
 }
 
   }
@@ -185,7 +185,7 @@ img{
 .h2-contents{
   display: flex;
   align-items:center;
-  margin:10rem 0;
+  margin:20rem 0;
 } 
 .h2-contents .second-heading{
   width:5em;
@@ -379,6 +379,9 @@ img{
 .past-works__list{
   width: 48%;
   margin-bottom: 50px;
+}
+.past-works__img{
+   box-shadow: 5px 5px 8px #999;
 }
 .past-works__ttl{
   font-size:24rem;
