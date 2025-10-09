@@ -54,7 +54,7 @@ img{
   display: block;
   max-width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
     :root {
         /* 768pxより狭い SPリキッドレイアウト:  1/375*100vw= .2667vw */
         --fs-vw: .2667;
@@ -72,12 +72,6 @@ img{
   margin: 0 auto;
   padding: 0 30rem;
   box-sizing: border-box;
-}
-@media (max-width: 768px) {
-  .inner {
-  padding: 0 20rem;
-
-  }
 }
 
 
@@ -97,11 +91,9 @@ img{
 }
 @media (max-width: 768px) {
 .site-header__inner{
-  padding:5rem 20rem;
+  padding:30rem;
 }
-
   }
-
 /*ロゴ*/
 .logo {
   height: 70rem;
@@ -131,30 +123,29 @@ img{
 }
 @media (max-width: 768px) {
   .logo {
-  height: 30rem;
+  height: 90rem;
 }
   .nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; 
-    height: 100vh;
+    width: 100%; 
+    height: 100%;
     background: var(--color-blue);
     transform: translateX(100%);
     transition: transform 0.4s ease;
-    z-index: 10;
-    padding:50rem 30rem;
+    z-index: 1000;
+    padding:150rem 100rem 100rem;;
   }
   .nav-list {
     flex-direction: column;
     padding: 1rem;
-    gap:20rem;
   }
   .nav-list a {
     display: block;
     width:100%;
-    font-size: 20rem;
-    padding: 10rem 0;
+    font-size: 60rem;
+    padding: 20rem 0;
   }
   .nav.active {
     transform: translateX(0);
@@ -176,20 +167,12 @@ img{
   }
 @media (max-width: 768px) {
 .first-heading{
-  font-size: 24rem;
+  font-size: 70rem;
   }
 .second-heading {
-  font-size:20rem;
-  margin:20rem 0 30rem;
+  font-size:50rem;
+  margin:20px 0 30px;
   }
-.h2-contents{
-  display: flex;
-  align-items:center;
-  margin:10rem 0;
-} 
-.h2-contents .second-heading{
-  width:5em;
-}
 
 }
 
@@ -280,6 +263,14 @@ img{
   transform: rotate(-45deg);
   margin-right: 5rem;
 }
+@media (max-width: 768px) {
+  .slick-next:before {
+  content: none;
+}
+.slick-prev:before {
+  content:none;
+}
+  }
 
 .slick-prev{
   left:100rem;
@@ -320,9 +311,6 @@ img{
 .slick-dotted.slick-slider {
     margin-bottom: 0; 
 }
-.slick-dots {
-    bottom: 20px;
-  }
 }
 
 
@@ -350,7 +338,7 @@ img{
   width:70%;
 }
 .introduction p{
-  font-size: 16px;
+  font-size: 16rem;
 }
 
 .introduction .sub-ttl{
@@ -361,9 +349,13 @@ img{
 .introduction{
   width:90%;
 }
+.introduction p{
+  font-size: 30rem;
+}
 
 .introduction .sub-ttl{
   display: block;
+  font-size:36rem;
 }
 
   }
@@ -404,6 +396,13 @@ img{
 .blue{
     background:var(--color-blue);
 }
+.h2-contents{
+  display: flex;
+  align-items: center;
+}
+.h2-contents .second-heading{
+  width: 4.2em;
+}
 @media (max-width: 768px) {
 .past-works__lists{
   flex-direction: column;
@@ -411,21 +410,18 @@ img{
 .past-works__list{
   width: 100%;
   margin-bottom: 50px;
-  padding-bottom: 50px;
-  border-bottom: 2px solid #b7adad;
 }
 .past-works__ttl{
-  font-size:20rem;
-  margin: 20rem 0 10rem;
+  font-size:32rem;
+  margin: 40rem 0 20rem;
 }
 .past-works__txt{
   font-size:18rem;
   }
 /*タグ*/
 .tag{
-  font-size: 14rem;
+  font-size: 24rem;
   line-height: 2;
-  padding:2rem 10rem;
 }
   }
 /*スキル*/
@@ -458,7 +454,7 @@ img{
   color:#ffc107;
 }
 .attention{
-  font-size:14px;
+  font-size:14rem;
   font-weight: bold;
   padding-left:2em;
   display: inline-block;
@@ -473,11 +469,14 @@ img{
   width: 100%;
 }
 .skill__ttl{
-  font-size:20rem;
+  font-size:32rem;
 }
 .skill__txt{
-  font-size: 16rem;
+  font-size: 18rem;
 
+}
+.attention{
+  font-size:18rem;
 }
 
   }
@@ -536,15 +535,15 @@ img{
 }
 .about-me__img{
   width:30%;
-  margin:0 auto 20rem;
+  margin:0 auto 50rem;
 }
 .about-me__txt {
   border: 2px solid #999999;
   width:100%;
   border-radius: 25px;
   margin:0 auto;
-  font-size:16rem;
-  padding:20rem;
+  font-size:20rem;
+  padding:30rem;
 }
 
 .about-me__txt::before {
