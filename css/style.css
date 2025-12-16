@@ -380,7 +380,7 @@ img{
   margin-bottom: 50px;
 }
 .past-works__img{
-   box-shadow: 5px 5px 8px #999;
+   box-shadow:7px -6px 8px #999;
 }
 .past-works__ttl{
   font-size:24rem;
